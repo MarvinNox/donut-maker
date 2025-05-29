@@ -49,6 +49,14 @@ main {
   flex-grow: 1;
 }
 
+section {
+  padding: 20px 0;
+
+  @media screen and (width >= 1200px) {
+    padding: 40px 0;
+  }
+}
+
 button {
   font-family: inherit;
 }
