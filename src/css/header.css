@@ -1,6 +1,18 @@
 header {
   display: flex;
   flex-direction: column;
+  & nav {
+    width: 1200px;
+    display: flex;
+    padding: 24px 20px;
+    justify-content: space-between;
+    @media screen and (width <=320px) {
+      align-items: center;
+    }
+    @media screen and (width >= 1200px) {
+      padding: 48px 80px;
+    }
+  }
 }
 .header-container {
   display: flex;
@@ -8,18 +20,6 @@ header {
   background: linear-gradient(90deg, #faffb7 0%, #fed7ff 100%);
 }
 
-nav {
-  width: 1200px;
-  display: flex;
-  padding: 24px 20px;
-  justify-content: space-between;
-  @media screen and (width <=320px) {
-    align-items: center;
-  }
-  @media screen and (width >= 1200px) {
-    padding: 48px 80px;
-  }
-}
 .header__logo--box {
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@ nav {
   padding: 0;
   list-style: none;
   flex: 1;
-  @media screen and (width > 320px) {
+  @media screen and (min-width: 1200px) {
     display: grid;
   }
 }
@@ -59,7 +59,7 @@ nav {
   transition: color 250ms ease-in;
   color: var(--text);
   &.box {
-    @media screen and (width <= 320px) {
+    @media screen and (width < 1200px) {
       display: none;
     }
   }
@@ -84,19 +84,29 @@ nav {
   background-color: transparent;
   padding: 10px 0;
   border: none;
-  @media screen and (width > 320px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
 .header__burger {
   stroke: var(--text);
+  width: 26px;
+  height: 18px;
+  transition: stroke 250ms ease-in-out;
   &:hover,
   &:active {
     stroke: var(--text-hover);
   }
+  @media screen and (min-width: 767px) {
+    width: 36px;
+    height: 24px;
+  }
 }
 .header_mob--title-box {
-  @media screen and (width >= 768px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -110,4 +120,8 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.25;
+
+  @media screen and (min-width: 767px) {
+    font-size: 36px;
+  }
 }
