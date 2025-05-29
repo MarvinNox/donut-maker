@@ -1,5 +1,6 @@
 footer {
   background: #ffe5b5;
+  margin-top: 40px;
 }
 .footer-container {
   margin: 0 auto;
@@ -10,8 +11,6 @@ footer {
     max-width: 1200px;
     padding: 40px 80px;
   }
-}
-.footer__nav {
 }
 .footer__list {
   display: flex;

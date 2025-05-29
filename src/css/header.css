@@ -62,6 +62,12 @@ header {
     @media screen and (width < 1200px) {
       display: none;
     }
+    &:hover {
+      color: var(--text-hover);
+    }
+    &:focus-within {
+      color: var(--text-click);
+    }
   }
 }
 .header__nav--item {
