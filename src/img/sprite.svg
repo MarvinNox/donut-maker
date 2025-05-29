@@ -1,0 +1,9 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
+    <defs>
+        <symbol id="menu-close" viewBox="0 0 20 20" fill="none">
+            <path stroke="black" stroke-width="2" d="M2 4h16"/>
+            <path stroke="black" stroke-width="2" d="M2 10h16"/>
+            <path stroke="black" stroke-width="2" d="M2 16h16"/>
+          </symbol>
+    </defs>
+</svg>
