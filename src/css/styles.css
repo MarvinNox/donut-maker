@@ -1,8 +1,17 @@
 /* Common styles */
-@import "node_modules/modern-normalize/modern-normalize.css";
-@import url("./fonts.css");
-@import url("./base.css");
-@import url("./container.css");
-@import url("./animations.css");
+@import 'node_modules/modern-normalize/modern-normalize.css';
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animation.css');
 
 /* Sections style */
+@import url('./header.css');
+@import url('./how-to-bake.css');
+@import url('./tools-ingredients.css');
+@import url('./build-bakery.css');
+@import url('./customization.css');
+@import url('./game-modes.css');
+@import url('./donut-showcase.css');
+@import url('./reviews.css');
+@import url('./download-now.css');
+@import url('./footer.css');
