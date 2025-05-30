@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 864px;
-  padding: 0;
+  @media screen and (min-width: 1200px) {
+    max-width: 864px;
+    padding: 0;
+  }
 }
 .down__title {
   font-family: var(--font-comfortaa);
@@ -28,13 +30,6 @@
   gap: 64px;
   margin-bottom: 40px;
 
-  &:first-child {
-    padding: 18px 40px;
-  }
-  &:last-child {
-    padding: 2px 40px;
-  }
-
   @media screen and (max-width: 767px) {
     flex-direction: column;
     font-size: 14px;
@@ -44,7 +39,14 @@
 }
 .down__item {
   text-align: center;
+  &:first-child {
+    padding: 18px 40px;
+  }
+  &:last-child {
+    padding: 2px 40px;
+  }
 }
+
 .footer__btn {
   border-radius: 100%;
   background-color: var(--button);
