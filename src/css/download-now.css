@@ -81,21 +81,24 @@
 }
 .down__sub::after {
   position: absolute;
-  right: -75px;
-  top: 24px;
+
   content: '';
   display: block;
   border-radius: 16px;
-  width: 68px;
-  height: 68px;
-  background-image: url(/img/download-now/game-icons_arrow-dunk.png);
+  right: -24px;
+  top: 20px;
+  width: 24px;
+  height: 32px;
+  background-image: url(/img/download-now/game-icons_arrow-dunk-mob.png);
   z-index: -1;
   background-repeat: no-repeat;
-  @media screen and (max-width: 767px) {
-    right: -24px;
-    top: 20px;
-    width: 24px;
-    height: 32px;
-    background-image: url(/img/download-now/game-icons_arrow-dunk-mob.png);
+}
+@media screen and (min-width: 767px) {
+  .down__sub::after {
+    right: -75px;
+    top: 24px;
+    width: 68px;
+    height: 68px;
+    background-image: url(/img/download-now/game-icons_arrow-dunk.png);
   }
 }
