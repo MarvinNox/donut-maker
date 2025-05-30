@@ -19,17 +19,17 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
-  & .sub {
+  &.sub {
     font-size: 18px;
     background: linear-gradient(90deg, #ae00ff 31.25%, #000c8c 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  @media screen and (width >= 768px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 40px;
     font-size: 32px;
-    & .sub {
+    &.sub {
       font-size: 24px;
     }
   }
