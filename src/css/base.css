@@ -48,9 +48,10 @@ main {
 
 section {
   padding: 20px 0;
-
+  scroll-margin-top: 100px;
   @media screen and (width >= 1200px) {
     padding: 40px 0;
+    scroll-margin-top: 180px;
   }
 }
 
