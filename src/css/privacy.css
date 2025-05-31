@@ -1,0 +1,130 @@
+.privacy--title {
+  font-family: var(--font-comfortaa);
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 40px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+}
+.privacy--sub__title {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 16px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+}
+.privacy--sub__title__sec {
+  font-weight: 400;
+  font-size: 14px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 16px;
+    font-size: 20px;
+  }
+}
+.thin {
+  font-weight: 400;
+}
+.privacy--text {
+  font-size: 14px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.39;
+    margin-bottom: 16px;
+  }
+}
+.privacy--list {
+  list-style: disc;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @media screen and (min-width: 1200px) {
+    gap: 16px;
+  }
+  & .privacy--item::marker {
+    font-size: 0.6em;
+  }
+}
+.privacy--list__main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @media screen and (min-width: 1200px) {
+    gap: 16px;
+  }
+}
+.sub {
+  margin-top: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 16px;
+  }
+}
+.privacy--back__title {
+  font-size: 14px;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.75;
+  }
+}
+.privacy--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  @media screen and (min-width: 1200px) {
+    gap: 16px;
+  }
+}
+.privacy--back__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  &:hover {
+    color: var(--text-hover);
+    & .privacy--icon {
+      fill: var(--text-hover);
+    }
+  }
+  &:focus-within {
+    color: var(--text-click);
+    & .privacy--icon {
+      fill: var(--text-click);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 16px;
+    padding: 10px 0;
+  }
+}
+.privacy--links {
+  &:hover {
+    color: var(--text-hover);
+  }
+  &:focus-within {
+    color: var(--text-click);
+  }
+}
+.privacy--icon {
+  fill: var(--text);
+  width: 14px;
+  height: 14px;
+  @media screen and (min-width: 1200px) {
+    width: 25px;
+    height: 25px;
+  }
+}
+.privacy--logo {
+  max-width: 24px;
+  @media screen and (min-width: 1200px) {
+    max-width: 65px;
+  }
+}
