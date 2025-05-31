@@ -29,6 +29,9 @@
     font-size: 20px;
   }
 }
+.thin {
+  font-weight: 400;
+}
 .privacy--text {
   font-size: 14px;
   margin-bottom: 8px;
