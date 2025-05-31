@@ -2,7 +2,7 @@ const popup = document.querySelector('[data-cookie-open]');
 export const popBtns = document.querySelectorAll('[data-btn-close]')
 const LS_KEY = 'pop-open';
 
-export function handleClose() {
+export function handleClosePopUp() {
     if (!popup) return;
     popup.dataset.cookieOpen = 'false';
     popup.classList.remove('open');
@@ -25,7 +25,4 @@ export function detectCookiePop() {
 }
 function setPopUp(state) {
     localStorage.setItem(LS_KEY, JSON.stringify(state));
-};
-function getPopUp() {
-    return JSON.parse(localStorage.getItem(LS_KEY));
 };
