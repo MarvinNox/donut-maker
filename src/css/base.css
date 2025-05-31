@@ -34,7 +34,6 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
 }
-
 body {
   display: flex;
   flex-direction: column;
