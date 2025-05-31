@@ -5,14 +5,14 @@
   width: 280px;
   border-radius: 16px;
   background: linear-gradient(270deg, #fafeb8 0%, #fed7fe 100%);
-  border-radius: 8px;
   padding: 20px 16px 48px 80px;
   overflow-y: auto;
-  opacity: 0.9;
-
   transform: translate(calc(100% + 20px), -50%);
   transition: transform 0.3s ease;
-  z-index: 999;
+  z-index: 1000;
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobile--menu__container.active {
