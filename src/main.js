@@ -1,4 +1,4 @@
-import { closeBtn, handleCloseMenu, handleOpenMenu, menuLinks, openBtn } from "./JS/menu";
+import { backdrop, closeBtn, handleCloseMenu, handleOpenMenu, menuLinks, openBtn } from "./JS/menu";
 import { detectCookiePop, handleClosePopUp, popBtns } from "./JS/pop-up";
 
 openBtn?.addEventListener('click', handleOpenMenu);
@@ -9,5 +9,7 @@ popBtns.forEach(btn => {
 menuLinks.forEach(link => {
     link.addEventListener('click', handleCloseMenu);
 });
+
+backdrop.addEventListener('click', handleCloseMenu);
 
 detectCookiePop()
