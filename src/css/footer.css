@@ -6,22 +6,17 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding: 20px 24px;
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
     padding: 40px 80px;
-    align-items: baseline;
   }
-}
-.footer__nav {
-  order: 2;
 }
 .footer__list {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  order: 1;
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     gap: 130px;
@@ -56,45 +51,8 @@ footer {
 .footer__rights {
   font-size: 12px;
   text-align: right;
-  order: 3;
   line-height: 1.75;
   @media screen and (min-width: 768px) {
     font-size: 20px;
   }
-  @media screen and (min-width: 1200px) {
-    order: 1;
-    text-align: left;
-  }
-}
-
-.cookie--pop {
-  position: fixed;
-  bottom: 0; /* Прибито до низу */
-  left: 0; /* Початок зліва */
-  width: 100%; /* На всю ширину */
-  height: 200px; /* Фіксована висота, можна змінити */
-  background-color: var(--white);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  transition: bottom 0.4s ease;
-  top: auto; /* Відмінити top */
-}
-
-.cookie--pop.open {
-  bottom: 0; /* Коли відкритий, теж внизу */
-  /* Видаляємо топ і медіа-запити, вони більше не потрібні */
-}
-
-.cookie--pop__inner {
-  height: 100%; /* Займає всю висоту батька */
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0;
-  background-color: var(--cookies);
 }
