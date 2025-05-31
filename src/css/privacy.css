@@ -1,0 +1,65 @@
+.privacy--title {
+  font-family: var(--font-comfortaa);
+  font-weight: 600;
+  font-size: 32px;
+  padding: 48px 0px 0px 0px;
+  margin-bottom: 16px;
+}
+.privacy--sub__title {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.privacy--sub__title__sec {
+  margin-left: 16px;
+  font-weight: 400;
+}
+.privacy--text {
+  font-size: 18px;
+  line-height: 1.39;
+  margin-bottom: 16px;
+}
+.privacy--list {
+  list-style: disc;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.privacy--list__main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sub {
+  margin-top: 16px;
+}
+.privacy--back__title {
+  font-size: 20px;
+  line-height: 1.75;
+}
+.privacy--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.privacy--back__link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 0;
+  &:hover {
+    color: var(--text-hover);
+    & .privacy--icon {
+      fill: var(--text-hover);
+    }
+  }
+  &:focus-within {
+    color: var(--text-click);
+    & .privacy--icon {
+      fill: var(--text-click);
+    }
+  }
+}
+.privacy--icon {
+  fill: var(--text);
+}
