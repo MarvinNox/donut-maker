@@ -14,7 +14,7 @@ footer {
     align-items: baseline;
   }
 }
-footer__nav {
+.footer__nav {
   order: 2;
 }
 .footer__list {
@@ -29,12 +29,17 @@ footer__nav {
 }
 .footer__item {
   line-height: 1.25;
+  transition: translate 300ms ease-in-out, scale 300ms ease-in-out;
   &:hover {
+    translate: 0 -4px;
+    scale: 1.05;
     .footer_nav--link {
       color: var(--text-hover);
     }
   }
   &:focus-within {
+    translate: 0 -2px;
+    scale: 1.02;
     .footer_nav--link {
       color: var(--text-click);
     }
@@ -58,5 +63,6 @@ footer__nav {
   }
   @media screen and (min-width: 1200px) {
     order: 1;
+    text-align: left;
   }
 }

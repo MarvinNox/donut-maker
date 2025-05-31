@@ -59,24 +59,34 @@ header {
   transition: color 250ms ease-in;
   color: var(--text);
   &.box {
+    transition: translate 300ms ease-in-out, scale 300ms ease-in-out;
     @media screen and (width < 1200px) {
       display: none;
     }
     &:hover {
+      translate: 0 -4px;
+      scale: 1.05;
       color: var(--text-hover);
     }
     &:focus-within {
+      translate: 0 -2px;
+      scale: 1.02;
       color: var(--text-click);
     }
   }
 }
 .header__nav--item {
+  transition: translate 300ms ease-in-out, scale 300ms ease-in-out;
   &:hover {
+    translate: 0 -4px;
+    scale: 1.05;
     .header__link {
       color: var(--text-hover);
     }
   }
   &:focus-within {
+    translate: 0 -2px;
+    scale: 1.02;
     .header__link {
       color: var(--text-click);
     }
