@@ -1,0 +1,119 @@
+.cookie--pop {
+  position: fixed;
+  /* top: 100%; */
+  width: 100%;
+  height: 300px;
+  bottom: 0;
+  top: auto;
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s ease;
+  transform: translateY(100%);
+}
+
+.cookie--pop.open {
+  transform: translateY(0);
+}
+
+.cookie--pop__inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  background-color: var(--cookies);
+}
+
+.cookie--pop__title {
+  align-self: center;
+  font-family: var(--font-comfortaa);
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+  }
+}
+.cookie--pop__txt {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 24px;
+  max-width: 190px;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.75;
+    max-width: 508px;
+  }
+}
+.accept {
+  background-color: var(--button-cookies);
+  &:hover,
+  &:focus-visible {
+    background-color: var(--accept-cookies-click);
+    box-shadow: 0 4px 50px 0 rgba(255, 0, 229, 0.35);
+  }
+}
+.decline {
+  background-color: var(--decline-cookies);
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0 4px 50px 0 rgba(255, 0, 229, 0.35);
+    background-color: var(--decline-cookies-click);
+  }
+}
+.cookie--pop__btn {
+  display: flex;
+  border-radius: 24px;
+  padding: 8px 88px;
+  font-size: 14px;
+  border: none;
+  color: var(--text-button);
+  transition: background-color 250ms ease-in-out, scale 250ms ease-in-out,
+    translate 250ms ease-in-out;
+  @media screen and (min-width: 1200px) {
+    border-radius: 32px;
+    padding: 8px 45px;
+    font-size: 20px;
+    line-height: 1.75;
+  }
+  &:hover {
+    translate: 0 -4px;
+    scale: 1.05;
+  }
+  &:active {
+    translate: 0 -2px;
+    scale: 1.02;
+  }
+  &:disabled {
+    translate: 0;
+    scale: 1;
+    cursor: not-allowed;
+    box-shadow: none;
+    background-color: var(--button-disabled);
+  }
+}
+
+.cookie--pop__inner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 48px 0;
+  }
+}
+.cookie--pop_btn--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}

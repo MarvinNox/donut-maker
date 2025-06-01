@@ -26,17 +26,14 @@
   color: var(--text);
   background-color: var(--background);
   font-family: var(--font-baloo);
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -51,9 +48,10 @@ main {
 
 section {
   padding: 20px 0;
-
+  scroll-margin-top: 100px;
   @media screen and (width >= 1200px) {
     padding: 40px 0;
+    scroll-margin-top: 180px;
   }
 }
 

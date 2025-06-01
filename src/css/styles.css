@@ -1,6 +1,7 @@
 /* Common styles */
 @import '../../node_modules/modern-normalize/modern-normalize.css';
 @import url('./base.css');
+@import url('./reset.css');
 @import url('./container.css');
 @import url('./animation.css');
 
@@ -15,4 +16,8 @@
 @import url('./donut-showcase.css');
 @import url('./reviews.css');
 @import url('./download-now.css');
+@import url('./privacy.css');
 @import url('./footer.css');
+@import url('./cookie-modal.css');
+@import url('./mobile-menu.css');
+@import url('./scroll-up.css');

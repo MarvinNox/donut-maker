@@ -1,1 +1,88 @@
-<header><div class="container"></div></header>
+<header>
+  <div class="header-container">
+    <nav>
+      <div class="header__logo--box">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="/img/header/logo.png 1x, /img/header/logo@2x.png 2x"
+          />
+          <source
+            media="(max-width: 375px)"
+            srcset="/img/header/logo-mob.png 1x, /img/header/logo-mob@2x.png 2x"
+          />
+          <img
+            src="/img/header/logo-mob.png"
+            alt="donuts logo"
+            class="header__logo"
+          />
+        </picture>
+        <a href="./index.html" class="header__link box">Home</a>
+      </div>
+      <div class="header_mob--title-box">
+        <p class="header__mobile-title">Donut Maker:</p>
+        <p class="header__mobile-title">Yummy Donuts</p>
+      </div>
+      <ul class="header__nav--list">
+        <li class="header__nav--item">
+          <a href="#how-to-bake" class="header__link">How to Bake </a>
+        </li>
+        <li class="header__nav--item">
+          <a href="#build-bakery" class="header__link">Build Your Bakery</a>
+        </li>
+        <li class="header__nav--item">
+          <a href="#game-modes" class="header__link">Game Modes</a>
+        </li>
+        <li class="header__nav--item">
+          <a href="#reviews" class="header__link">Reviews</a>
+        </li>
+        <li class="header__nav--item">
+          <a href="#tools-ingredients" class="header__link"
+            >Tools & Ingredients</a
+          >
+        </li>
+        <li class="header__nav--item">
+          <a href="#customization" class="header__link">Customization</a>
+        </li>
+        <li class="header__nav--item">
+          <a href="#donut-showcase" class="header__link">Donut Showcase</a>
+        </li>
+        <li class="header__nav--item">
+          <a href="#download-now" class="header__link">Call to Action</a>
+        </li>
+      </ul>
+      <button type="button" data-menu-open class="header__burger-menu">
+        <svg
+          class="header__burger"
+          viewBox="0 0 26 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M1 1H25" stroke-width="2" stroke-linecap="round" />
+          <path d="M1 9H25" stroke-width="2" stroke-linecap="round" />
+          <path d="M1 17H25" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<div class="hero">
+  <picture>
+    <source
+      media="(min-width: 375px)"
+      srcset="/img/header/header_game.png 1x, /img/header/header_game@2x.png 2x"
+    />
+    <source
+      media="(max-width: 320px)"
+      srcset="
+        /img/header/header_game-mob.png    1x,
+        /img/header/header_game-mob@2x.png 2x
+      "
+    />
+    <img
+      class="header__main--img"
+      src="/img/header/header_game-mob.png"
+      alt="game image"
+    />
+  </picture>
+</div>
