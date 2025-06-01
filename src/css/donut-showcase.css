@@ -36,8 +36,7 @@
   overflow: visible;
   width: 100%;
   padding: 20px 0;
-  height: 70vh;
-  overflow: visible;
+  height: 50vh;
   @media screen and (max-width: 400px) {
     height: 35vh;
   }
