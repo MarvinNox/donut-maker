@@ -34,8 +34,8 @@
 .donut-showcase {
   position: relative;
   width: 100%;
-  padding: 20px 0;
-  height: 50vh;
+  padding: 0;
+  height: 650px;
   @media screen and (max-width: 400px) {
     height: 35vh;
   }
