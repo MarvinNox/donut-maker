@@ -1,0 +1,107 @@
+@import 'swiper/swiper-bundle.css';
+#donut-showcase .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donut--title {
+  font-family: var(--font-comfortaa);
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #000c8c 0%, #ae00ff 71.48%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+    font-size: 32px;
+  }
+
+  &.sub {
+    font-size: 18px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 24px;
+    }
+  }
+}
+
+.donut-showcase {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.donut-showcase .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.donut-showcase .swiper-slide {
+  opacity: 0.4;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donut-showcase .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+g .donut-showcase .swiper-slide-next,
+.donut-showcase .swiper-slide-prev {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+/* Пончиковий блок */
+.donut--box {
+  width: 350px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: 0 4px 50px 0 rgba(255, 0, 229, 0.35);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+.donut__one {
+  background-image: url('../img/donut-showcase/donut_1.png');
+}
+.donut__two {
+  background-image: url('../img/donut-showcase/donut_2.png');
+}
+.donut__three {
+  background-image: url('../img/donut-showcase/donut_3.png');
+}
+.donut__four {
+  background-image: url('../img/donut-showcase/donut_4.png');
+}
+.donut__five {
+  background-image: url('../img/donut-showcase/donut_5.png');
+}
+
+.donut-showcase .swiper-button-next,
+.donut-showcase .swiper-button-prev {
+  color: #333;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  z-index: 10;
+}
+
+.donut-showcase .swiper-button-prev {
+  left: 10px;
+}
+
+.donut-showcase .swiper-button-next {
+  right: 10px;
+}

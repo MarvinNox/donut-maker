@@ -15,3 +15,10 @@ window.addEventListener('scroll', scrollUpBtnShow);
 scrollBtn.addEventListener('click', scrollUp);
 
 detectCookiePop()
+
+import './css/donut-showcase.css';
+import { initDonutShowcase } from "./JS/donut-show";
+
+window.addEventListener('DOMContentLoaded', () => {
+    initDonutShowcase();
+});
