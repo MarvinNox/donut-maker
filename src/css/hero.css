@@ -106,9 +106,12 @@
 @media only screen and (width >=1200px) {
     .hero-container {
         min-width: 1200px;
-        display: grid;
-        /* display: inline-flex; */
-        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hero .container {
+        position: relative;
     }
 
     .hero-title-h2 {
@@ -135,6 +138,7 @@
     .hero-wrapper-link {
         width: 331px;
         order: 5;
+        margin: 40px auto;
     }
 
     .hero-link-play {
@@ -152,17 +156,19 @@
 
     .hero-link-span {
         font-size: 24px;
-        padding-left: 3px;
+        margin-left: 16px;
+        padding: 0;
     }
 
     .hero-wrapper-h {
         order: -1;
-
     }
 
     .hero-wrapper-p {
         width: 330px;
         order: 3;
+        position: absolute;
+        top: 22%;
+        left: 36%;
     }
-
 }
