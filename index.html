@@ -28,7 +28,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donut Maker</title>
     <script type="module" crossorigin src="/donut-maker/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/donut-maker/assets/styles-BVIS7v78.css">
+    <link rel="modulepreload" crossorigin href="/donut-maker/assets/vendor-1NKAfd5N.js">
+    <link rel="stylesheet" crossorigin href="/donut-maker/assets/vendor-BUrcyj0q.css">
+    <link rel="stylesheet" crossorigin href="/donut-maker/assets/index-j69fezRx.css">
+    <link rel="stylesheet" crossorigin href="/donut-maker/assets/styles-DObCT9Jm.css">
   </head>
   <body>
     <header>
@@ -432,7 +435,38 @@
 </section>
 
       <section id="donut-showcase">
-  <div class="container"></div>
+  <div class="container">
+    <h2 class="donut--title">Donut Showcase</h2>
+    <h3 class="donut--title sub">Your Donut Gallery</h3>
+    <div class="swiper donut-showcase">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="donut--box donut__one"></div>
+          <p>Comparison of plain vs. decorated versions</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="donut--box donut__two"></div>
+          <p>Themed customer orders (e.g., Unicorn, Panda, Mermaid)</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="donut--box donut__three"></div>
+          <p>Donut tray filled with 9 styles</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="donut--box donut__four"></div>
+          <p>Donut photo mode — export and share!</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="donut--box donut__five"></div>
+          <p>Donuts being frosted in real time</p>
+        </div>
+      </div>
+
+      <!-- Кнопки навігації -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
 </section>
 
       <section id="reviews">
