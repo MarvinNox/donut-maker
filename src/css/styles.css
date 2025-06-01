@@ -7,6 +7,7 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./hero.css');
 @import url('./how-to-bake.css');
 @import url('./tools-ingredients.css');
 @import url('./build-bakery.css');
@@ -15,7 +16,6 @@
 @import url('./donut-showcase.css');
 @import url('./reviews.css');
 @import url('./download-now.css');
-
 @import url('./privacy.css');
 @import url('./footer.css');
 @import url('./cookie-modal.css');
