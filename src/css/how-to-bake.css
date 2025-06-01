@@ -2,3 +2,16 @@
 ol {
     list-style-type: none;
 } */
+
+.bb__donut-wrap {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 20px;
+
+    /* @media screen and (width >=1200px) {
+        margin-top: 654px;
+        align-self: baseline;
+    } */
+}
