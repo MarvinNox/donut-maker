@@ -64,6 +64,9 @@
 }
 
 .footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 100%;
   background-color: var(--button);
   height: 100px;

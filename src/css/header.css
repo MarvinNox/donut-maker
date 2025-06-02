@@ -149,9 +149,3 @@ header {
     font-size: 36px;
   }
 }
-.hero {
-  padding-top: 108px;
-  @media screen and (width >= 1200px) {
-    padding-top: 200px;
-  }
-}
