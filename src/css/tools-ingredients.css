@@ -27,9 +27,9 @@
   text-align: center;
   margin-bottom: 16px;
   @media screen and (min-width: 1200px) {
-    font-weight: 400;
     font-size: 20px;
     line-height: 1.75;
+    margin-bottom: 24px;
   }
 }
 
@@ -39,6 +39,11 @@
   margin-bottom: 16px;
   justify-content: center;
   flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
 }
 .tools--list__tools {
   display: inline-block;
@@ -49,21 +54,33 @@
   & .tools--list__item::marker {
     font-size: 0.6em;
   }
+  @media screen and (min-width: 1200px) {
+    width: auto;
+  }
 }
 
 .tools--list__item {
   font-size: 14px;
   @media screen and (min-width: 1200px) {
     font-size: 20px;
+    line-height: 1.75;
   }
 }
 .tools--image__box {
+  display: flex;
+  align-items: center;
   border-radius: 24px;
   max-width: 200px;
   max-height: 140px;
   order: 1;
   overflow: hidden;
   box-shadow: 0 1px 13px 0 rgba(255, 0, 229, 0.35);
+  @media screen and (min-width: 1200px) {
+    border-radius: 80px;
+    order: 2;
+    max-width: 320px;
+    max-height: 240px;
+  }
 }
 .tools--image__box .tools--image {
   width: 100%;
@@ -71,15 +88,14 @@
   object-fit: cover;
   display: block;
 }
-.tools--image {
-}
-.tools--text__title {
-}
 .tools--list__ing {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 .tools--list__item--ing {
   display: flex;
@@ -87,12 +103,14 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
-
   width: 50px;
+  @media screen and (min-width: 1200px) {
+    width: 100px;
+    gap: 8px;
+  }
 }
 .tools--ing__txt {
   font-size: 14px;
-  margin-bottom: 8px;
   @media screen and (min-width: 1200px) {
     font-size: 20px;
   }
@@ -108,10 +126,36 @@
     height: 100px;
   }
 }
-
 .tools--ing__image--box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+.tools--donut__wrapper {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    margin-top: 40px;
+    gap: 16px;
+  }
+}
+.tools--donut__icon {
+  fill: var(--text);
+  width: 24px;
+  height: 24px;
+  @media screen and (min-width: 1200px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+.tools--donut__txt {
+  font-size: 14px;
+  max-width: 256px;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    max-width: 100%;
+  }
 }
