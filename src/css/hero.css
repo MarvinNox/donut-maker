@@ -171,7 +171,7 @@
   .hero-btn-link {
     width: 331px;
     order: 5;
-    margin: 40px auto;
+    margin: 0 auto;
     box-shadow: none;
     transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
     &:focus-within {
@@ -216,7 +216,7 @@
     width: 330px;
     order: 3;
     position: absolute;
-    top: 22%;
+    top: 17%;
     left: 36%;
   }
 }
