@@ -47,9 +47,8 @@
 }
 .tools--list__tools {
   display: inline-block;
-  width: 40%;
   vertical-align: top;
-  list-style: disc;
+  list-style: none;
   order: 2;
   & .tools--list__item::marker {
     font-size: 0.6em;
@@ -59,11 +58,26 @@
   }
 }
 
+.sub-tools {
+  margin-left: 40px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
+}
 .tools--list__item {
   font-size: 14px;
+  position: relative;
+  padding-left: 6px;
   @media screen and (min-width: 1200px) {
     font-size: 20px;
     line-height: 1.75;
+  }
+  &::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    font-size: 0.9em;
+    top: 0.1em;
   }
 }
 .tools--image__box {
