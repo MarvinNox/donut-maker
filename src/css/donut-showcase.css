@@ -49,9 +49,9 @@
   flex-direction: column;
   gap: 24px;
   overflow: visible;
+  opacity: 0;
 }
 .swiper-slide p {
-  /* line-height: 1.75; */
   text-align: center;
   width: 600px;
   @media screen and (max-width: 400px) {
@@ -70,6 +70,7 @@
 .donut-showcase .swiper-slide-active {
   z-index: 3;
   scale: 1.4;
+  opacity: 1;
 }
 
 .swiper-slide-prev .donut--box {
