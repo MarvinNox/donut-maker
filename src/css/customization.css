@@ -4,20 +4,31 @@
   column-gap: 24px;
   row-gap: 32px;
 }
+.customiz--list.swiper {
+  @media screen and (width >= 1200px) {
+    display: none;
+  }
+}
 .customiz--item {
   display: flex;
   align-items: center;
   gap: 24px;
+  @media screen and (width < 1200px) {
+    flex-direction: column;
+  }
 }
 .customiz--text {
-  max-width: 230px;
   font-size: 14px;
-
   @media screen and (min-width: 1200px) {
+    max-width: 230px;
     font-size: 20px;
     line-height: 1.75;
   }
 }
+.customiz--list.swiper .swiper-wrapper .swiper-slide p {
+  width: 280px;
+}
+
 .customiz--image__box {
   display: flex;
   align-items: center;
@@ -25,9 +36,11 @@
   border-radius: 24px;
   width: 260px;
   height: 160px;
-  box-shadow: 0 1px 13px 0 rgba(255, 0, 229, 0.35);
+  box-shadow: 0 1px 20px 0 rgba(255, 0, 229, 0.35);
+  margin-top: 12px;
 
   @media screen and (min-width: 1200px) {
+    box-shadow: 0 1px 13px 0 rgba(255, 0, 229, 0.35);
     border-radius: 48px;
     width: 240px;
   }
@@ -39,10 +52,8 @@
   object-fit: cover;
   display: block;
 }
-
-.tools--donut__wrapper {
-}
-.tools--donut__icon {
-}
-.tools--donut__txt {
+ul.customiz--list {
+  @media screen and (width < 1200px) {
+    display: none;
+  }
 }
