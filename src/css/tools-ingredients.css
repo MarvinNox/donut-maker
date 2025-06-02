@@ -95,6 +95,7 @@
     order: 2;
     max-width: 320px;
     max-height: 240px;
+    box-shadow: 0 5px 50px 0 rgba(255, 0, 229, 0.35);
   }
 }
 .tools--image__box .tools--image {
@@ -139,6 +140,7 @@
   @media screen and (min-width: 1200px) {
     width: 100px;
     height: 100px;
+    box-shadow: 0 4px 50px 0 rgba(255, 0, 229, 0.35);
   }
 }
 .tools--ing__image--box img {
