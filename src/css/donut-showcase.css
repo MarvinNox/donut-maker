@@ -132,11 +132,19 @@
 .donut-showcase .swiper-button-next,
 .donut-showcase .swiper-button-prev {
   color: var(--text);
-  top: 42%;
+  top: 47%;
   width: 10px;
   height: 20px;
   z-index: 10;
   scale: 0.55;
+  transition: color 300ms ease-in-out, scale 300ms ease-in-out;
+  &:hover {
+    color: var(--text-hover);
+    scale: 0.7;
+  }
+  &:active {
+    color: var(--text-click);
+  }
 }
 .donut-showcase .swiper-button-prev {
   left: 20%;
