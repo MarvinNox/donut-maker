@@ -3,6 +3,7 @@ import 'swiper/css/bundle';
 
 export function initDonutShowcase() {
     new Swiper('.donut-showcase', {
+        speed: 600,
         loop: true,
         centeredSlides: true,
         slidesPerView: 'auto',
