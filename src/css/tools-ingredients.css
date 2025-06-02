@@ -70,8 +70,8 @@
   display: flex;
   align-items: center;
   border-radius: 24px;
-  max-width: 200px;
-  max-height: 140px;
+  max-width: 260px;
+  max-height: 160px;
   order: 1;
   overflow: hidden;
   box-shadow: 0 1px 13px 0 rgba(255, 0, 229, 0.35);
