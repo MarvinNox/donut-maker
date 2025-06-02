@@ -18,7 +18,9 @@ detectCookiePop()
 
 import './css/donut-showcase.css';
 import { initDonutShowcase } from "./JS/donut-show";
+import { initCustomizSlider } from "./JS/slider-customiz";
 
 window.addEventListener('DOMContentLoaded', () => {
     initDonutShowcase();
+    initCustomizSlider()
 });
