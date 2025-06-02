@@ -1,11 +1,11 @@
 {
-  "name": "donut-maker",
+  "name": "stp-9253",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/donut-maker/",
+    "build": "vite build --base=/stp-9253/",
     "preview": "vite preview"
   },
   "devDependencies": {
