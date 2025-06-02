@@ -1,0 +1,117 @@
+.tools--title {
+  font-family: var(--font-comfortaa);
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #000c8c 0%, #ae00ff 71.48%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+    font-size: 32px;
+  }
+
+  &.sub {
+    font-size: 18px;
+    @media screen and (min-width: 1200px) {
+      font-size: 24px;
+    }
+  }
+}
+.tools--text__title {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.75;
+  }
+}
+
+.tools--wrap {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tools--list__tools {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  list-style: disc;
+  order: 2;
+  & .tools--list__item::marker {
+    font-size: 0.6em;
+  }
+}
+
+.tools--list__item {
+  font-size: 14px;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+.tools--image__box {
+  border-radius: 24px;
+  max-width: 200px;
+  max-height: 140px;
+  order: 1;
+  overflow: hidden;
+  box-shadow: 0 1px 13px 0 rgba(255, 0, 229, 0.35);
+}
+.tools--image__box .tools--image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.tools--image {
+}
+.tools--text__title {
+}
+.tools--list__ing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.tools--list__item--ing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  width: 50px;
+}
+.tools--ing__txt {
+  font-size: 14px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+.tools--ing__image--box {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px 0 rgba(255, 0, 229, 0.35);
+  @media screen and (min-width: 1200px) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.tools--ing__image--box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
