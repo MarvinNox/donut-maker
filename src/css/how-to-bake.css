@@ -1,17 +1,96 @@
-/* ul,
+ul,
 ol {
     list-style-type: none;
-} */
+}
 
-.bb__donut-wrap {
+#how-to-bake .container {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* padding: 0; */
+    /* margin: 0; */
+}
+
+.htw-title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    background: linear-gradient(90deg, #000c8c 0%, #ae00ff 71.48%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* padding-bottom: 24px; */
+    margin: 0 auto;
+
+    align-items: center;
+}
+
+.htw-title-subtitle {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    background: linear-gradient(90deg, #ae00ff 0%, #000b7e 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* padding-top: 24px; */
+    /* padding-bottom: 24px; */
+}
+
+.htw-txt {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.75;
+    color: #4d0d41;
+    margin: 24px 89px;
+    /* width: 862px; */
+}
+
+.htw-wrap {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+}
+
+.htw-list {
+    /* display: grid; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.htw-title-list {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    background: linear-gradient(90deg, #ae00ff 31.25%, #000c8c 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .bb__donut-wrap {
     margin-top: 16px;
     display: flex;
     align-items: center;
     gap: 8px;
     width: 20px;
 
-    /* @media screen and (width >=1200px) {
+    @media screen and (width >=1200px) {
         margin-top: 654px;
         align-self: baseline;
-    } */
+    }
+} */
+
+.icon-solar_donut {
+    width: 25px;
+    fill: var(--text);
+
+    @media screen and (width >=1200px) {
+        width: 35px;
+    }
 }
