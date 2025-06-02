@@ -6,8 +6,8 @@ export function initDonutShowcase() {
         speed: 1000,
         loop: true,
         autoplay: {
-            delay: 3000,
-            disableOnInteraction: true,
+            delay: 1500,
+            disableOnInteraction: false,
         },
         slidesPerView: 'auto',
         centeredSlides: true,
