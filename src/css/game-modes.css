@@ -78,11 +78,21 @@
 }
 
 .game__mods-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
+
   @media screen and (min-width: 1200px) {
     font-size: 20px;
+    &:nth-child(odd) {
+      .game__mods--icon_box {
+        box-shadow: 0 4px 50px 0 rgba(247, 255, 0, 0.5);
+      }
+    }
   }
 }
+
 .game__adv-item::before {
   position: absolute;
   content: '';
@@ -99,5 +109,23 @@
 @media screen and (min-width: 1200px) {
   .game__adv-item::before {
     display: none;
+  }
+}
+.game__mods--icon_box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 50px 0 rgba(255, 0, 229, 0.35);
+  @media screen and (width >= 1200px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+.game__mods--icon {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  @media screen and (width >= 1200px) {
   }
 }
