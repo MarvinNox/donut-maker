@@ -1,3 +1,8 @@
+#customization .container .tools--title.sub {
+  @media screen and (width < 1200px) {
+    margin-bottom: 0;
+  }
+}
 .customiz--list {
   display: flex;
   flex-wrap: wrap;
@@ -37,7 +42,7 @@
   width: 260px;
   height: 160px;
   box-shadow: 0 1px 20px 0 rgba(255, 0, 229, 0.35);
-  margin-top: 12px;
+  margin-top: 16px;
   transition: scale 300ms ease-in-out;
   &:hover {
     scale: 1.05;
