@@ -11,7 +11,10 @@
 }
 .hero-container {
   width: 320px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .hero-btn-link {
   order: 1;
   display: block;
@@ -47,8 +50,7 @@
 }
 
 .hero-donut-img {
-  display: inline-block;
-  max-width: 130px;
+  object-fit: cover;
   border-radius: 40px;
   box-shadow: 0 4px 50px 0 rgba(255, 0, 229, 0.35);
   transition: scale 300ms ease-in-out, box-shadow 300ms ease-in-out;
@@ -60,22 +62,29 @@
   }
 }
 
-.hero-wrapper-img {
+.hero-wrapper-img-play {
+  max-width: 130px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 32px;
-  @media screen and (min-width: 1200px) {
+  order: 2;
+
+  @media screen and (width >= 1200px) {
+    max-width: 331px;
+    max-height: 240px;
+    display: flex;
   }
 }
 
-.hero-wrapper-img-play {
-  order: 2;
-}
-
 .hero-wrapper-img-make {
+  max-width: 130px;
+  margin-left: 20px;
+  display: flex;
   order: 3;
+  @media screen and (width >= 1200px) {
+    margin-left: 0;
+    max-width: 331px;
+    max-height: 350px;
+    order: 4;
+  }
 }
 
 .hero-wrapper-h {
@@ -88,6 +97,7 @@
 }
 
 .hero-title-h2 {
+  margin-top: 24px;
   font-family: var(--font-comfortaa);
   font-weight: 600;
   font-size: 24px;
@@ -140,24 +150,16 @@
   .hero-container {
     min-width: 1200px;
     display: flex;
-    flex-direction: column;
-  }
-
-  #hero .container {
     position: relative;
   }
-
   .hero-title-h2 {
+    margin-top: 0;
     font-size: 32px;
     margin-bottom: 24px;
   }
 
   .hero-title-h3 {
     font-size: 24px;
-  }
-
-  .hero-donut-img {
-    max-width: 331px;
   }
 
   .hero-text-1,
@@ -171,7 +173,10 @@
   .hero-btn-link {
     width: 331px;
     order: 5;
-    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    top: 19em;
+    margin: 0;
     box-shadow: none;
     transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
     &:focus-within {
@@ -210,13 +215,12 @@
 
   .hero-wrapper-h {
     order: -1;
+    width: 100%;
   }
 
   .hero-wrapper-p {
-    width: 330px;
+    max-width: 330px;
     order: 3;
-    position: absolute;
-    top: 19%;
-    left: 22em;
+    margin: 0 24px;
   }
 }
