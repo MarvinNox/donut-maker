@@ -56,9 +56,9 @@
 .game__list-adv {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 24px;
   @media screen and (min-width: 1200px) {
-    gap: 24px;
+    gap: 34px;
   }
 }
 .sub--list {
