@@ -1,17 +1,38 @@
-.bake--list {
+#how-to-bake .donut--title {
+  margin-bottom: 24px;
 }
 .bake--list__item {
+  margin-bottom: 34px;
+}
+.donut--txt {
+  font-size: 14px;
+  max-width: 280px;
+  @media screen and (width >= 1200px) {
+    font-size: 20px;
+    line-height: 1.75;
+    max-width: 862px;
+    margin: 0 auto;
+  }
 }
 .bake--step-wrap {
-  margin-right: 45px;
+  order: 1;
   display: flex;
   align-items: center;
-  gap: 16px;
+  align-self: flex-start;
   font-family: var(--font-comfortaa);
-  font-weight: 600;
-  font-size: 24px;
-}
-.bake--step-numb {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0.9375;
+  margin-right: 8px;
+  gap: 4px;
+  @media screen and (width >= 1200px) {
+    order: 1;
+    font-weight: 600;
+    font-size: 24px;
+    margin-right: 45px;
+    margin-top: 12px;
+    gap: 16px;
+  }
 }
 .bake--step-word {
   display: flex;
@@ -20,10 +41,20 @@
 }
 .bake--item__wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  @media screen and (width >= 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 .bake--item__list {
+  order: 3;
   max-width: 596px;
+  margin-top: 16px;
+  @media screen and (width >= 1200px) {
+    margin-top: 0;
+    order: 2;
+  }
 }
 .bake--small_item {
   font-size: 14px;
@@ -59,9 +90,8 @@
     top: 0.1em;
   }
 }
-
 .bake--img__box {
-  margin-left: 24px;
+  order: 2;
   width: 245px;
   height: 128px;
   display: flex;
@@ -73,11 +103,16 @@
   &:hover {
     scale: 1.05;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (width >= 1200px) {
+    order: 3;
     width: 330px;
     height: 240px;
     box-shadow: 0 4px 40px 0 rgba(247, 255, 0, 0.5);
     border-radius: 80px;
+    margin-left: 24px;
+
+    width: 245px;
+    height: 128px;
   }
 }
 .baker--img {
@@ -85,10 +120,4 @@
   height: 100%;
   object-fit: cover;
   display: block;
-}
-.tools--donut__wrapper {
-}
-.tools--donut__icon {
-}
-.tools--donut__txt {
 }
