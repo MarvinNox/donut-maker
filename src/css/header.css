@@ -6,13 +6,13 @@ header {
   width: 100%;
   & nav {
     width: 100%;
-    max-width: 320px;
     display: flex;
     padding: 24px 20px;
     justify-content: space-between;
-    @media screen and (width <=320px) {
-      max-width: 320px;
-      align-items: center;
+    align-items: center;
+    @media screen and (width > 768px) {
+      padding: 32px 40px;
+      max-width: 768px;
     }
     @media screen and (width >= 1200px) {
       padding: 48px 80px;
