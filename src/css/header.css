@@ -10,13 +10,13 @@ header {
     padding: 24px 20px;
     justify-content: space-between;
     align-items: center;
-    @media screen and (width > 768px) {
-      padding: 32px 40px;
-      max-width: 768px;
+    @media screen and (width >= 768px) {
+      padding: 24px 40px;
     }
     @media screen and (width >= 1200px) {
       padding: 48px 80px;
       max-width: 1200px;
+      gap: 64px;
     }
   }
 }
@@ -33,7 +33,6 @@ header {
   justify-content: center;
   padding-right: 0;
   @media screen and (width >= 768px) {
-    padding-right: 64px;
     justify-content: space-between;
   }
   @media screen and (width >= 1200px) {
@@ -43,7 +42,7 @@ header {
 .header__logo {
   width: 40px;
   height: 40px;
-  @media screen and (width >= 768px) {
+  @media screen and (width >= 1200px) {
     width: 65px;
     height: 65px;
   }
@@ -147,8 +146,4 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.25;
-
-  @media screen and (min-width: 767px) {
-    font-size: 36px;
-  }
 }

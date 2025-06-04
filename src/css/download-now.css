@@ -17,7 +17,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 40px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1200px) {
     font-size: 20px;
     margin-bottom: 16px;
     max-width: 240px;
@@ -31,7 +31,7 @@
   margin-bottom: 40px;
   text-align: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     flex-direction: column;
     font-size: 14px;
     line-height: 1.55;
@@ -41,7 +41,7 @@
 .down__item {
   text-align: left;
   align-items: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     width: 300px;
     text-align: center;
     line-height: 1.75;
@@ -78,7 +78,7 @@
   color: var(--text-button);
   transition: box-shadow 300ms ease-in-out, background-color 300ms ease-in-out,
     translate 300ms ease-in-out;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1200px) {
     font-size: 14px;
     font-weight: 400;
     width: 280px;
@@ -99,7 +99,7 @@
 .down__sub {
   position: relative;
   margin-bottom: 70px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1200px) {
     margin-bottom: 26px;
   }
 }
@@ -117,7 +117,7 @@
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .down__sub::after {
     right: -75px;
     top: 14px;

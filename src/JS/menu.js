@@ -13,5 +13,5 @@ export function handleOpenMenu() {
 export function handleCloseMenu() {
     menu.dataset.menu = 'false';
     backdrop.dataset.backdropOpen = 'false';
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = '';
 }

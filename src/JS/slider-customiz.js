@@ -8,9 +8,9 @@ export function initCustomizSlider() {
         slidesPerView: 1,
         spaceBetween: 20,
         centeredSlides: true,
-        autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 1500,
+        //     disableOnInteraction: false,
+        // },
     });
 }
