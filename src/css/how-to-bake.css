@@ -16,18 +16,6 @@
     margin-inline: auto;
   }
 }
-.bake--list {
-  display: none;
-  @media screen and (width >= 1200px) {
-    display: block;
-  }
-  &.swiper {
-    display: block;
-    @media screen and (width >= 1200px) {
-      display: none;
-    }
-  }
-}
 
 .bake--list__item {
   margin-bottom: 34px;
@@ -156,4 +144,19 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+@media (min-width: 1200px) {
+  #how-to-bake .swiper-wrapper {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    overflow: visible !important;
+  }
+
+  #how-to-bake .swiper-slide {
+    width: auto !important;
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+    position: static !important;
+    transform: none !important;
+  }
 }
