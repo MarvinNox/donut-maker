@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 export function initHowToBakeSlider() {
-    new Swiper('.bake--list.swiper', {
+    new Swiper('[data-htb-swiper]', {
         speed: 1500,
         loop: true,
         slidesPerView: 1,

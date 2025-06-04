@@ -7,7 +7,6 @@
   background: linear-gradient(270deg, #fafeb8 0%, #fed7fe 100%);
   padding: 20px 16px 48px 80px;
   overflow-y: auto;
-  transform: translate(calc(100% + 20px), -50%);
   transition: transform 0.3s ease;
   z-index: 1000;
   @media (min-width: 768px) {
@@ -15,8 +14,12 @@
   }
 }
 
-.mobile--menu__container.active {
+[data-menu='true'] {
   transform: translate(-50%, -50%);
+}
+
+[data-menu='false'] {
+  transform: translate(calc(100% + 20px), -50%);
 }
 
 .mobile--menu__close {
@@ -63,12 +66,15 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 999;
-  opacity: 0;
-  pointer-events: none;
   transition: opacity 0.3s ease;
 }
 
-.mobile--menu__backdrop.active {
+[data-backdrop-open='true'] {
   opacity: 1;
   pointer-events: auto;
+}
+
+[data-backdrop-open='false'] {
+  opacity: 0;
+  pointer-events: none;
 }
