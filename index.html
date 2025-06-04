@@ -31,7 +31,7 @@
     <link rel="modulepreload" crossorigin href="/stp-9253/assets/vendor-B8P2uc2V.js">
     <link rel="stylesheet" crossorigin href="/stp-9253/assets/vendor-CbrhTlQo.css">
     <link rel="stylesheet" crossorigin href="/stp-9253/assets/index-BJgT4dp7.css">
-    <link rel="stylesheet" crossorigin href="/stp-9253/assets/styles-DiNG7qPC.css">
+    <link rel="stylesheet" crossorigin href="/stp-9253/assets/styles-neNcSo-i.css">
   </head>
   <body>
     <header>
@@ -488,7 +488,7 @@
       </li>
     </ul>
     <!--slider block-->
-    <div class="customiz--list swiper" data-customiz-swiper>
+    <div class="customiz--list swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="customiz--item">
@@ -813,7 +813,7 @@
   <div class="container">
     <h2 class="donut--title">Donut Showcase</h2>
     <h3 class="donut--title sub">Your Donut Gallery</h3>
-    <div class="swiper donut-showcase" data-donut-swiper>
+    <div class="swiper donut-showcase">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="donut--box donut__one"></div>
@@ -836,8 +836,10 @@
           <p>Donuts being frosted in real time</p>
         </div>
       </div>
-      <div class="swiper-button-prev" data-swipe-prev></div>
-      <div class="swiper-button-next" data-swipe-next></div>
+
+      <!-- Кнопки навігації -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </section>
@@ -971,12 +973,7 @@
   </div>
 </section>
 
-      <button
-  class="scroll-up--btn"
-  data-scroll-btn="false"
-  type="button"
-  id="scroll-up"
->
+      <button class="scroll-up--btn" data-scroll-btn type="button" id="scroll-up">
   <svg class="scroll-up--icon">
     <use xlink:href="/stp-9253/assets/sprite-CXuYpkcw.svg#scroll-up"></use>
   </svg>
@@ -1006,7 +1003,7 @@
   </div>
 </footer>
 
-    <div class="cookie--pop" data-cookie-open="false">
+    <div class="cookie--pop" data-cookie-open="true">
   <div class="cookie--pop__inner">
     <div class="container">
       <h2 class="cookie--pop__title">Cookies Policy</h2>
@@ -1025,8 +1022,8 @@
   </div>
 </div>
 
-    <div class="mobile--menu__backdrop" data-backdrop-open="false"></div>
-<nav class="mobile--menu__container" data-menu="false" aria-hidden="true">
+    <div class="mobile--menu__backdrop" data-menu-backdrop></div>
+<nav class="mobile--menu__container" data-menu aria-hidden="true">
   <button class="mobile--menu__close" data-menu-close aria-label="close menu">
     <svg class="mobile--menu__close--icon">
       <use xlink:href="/stp-9253/assets/sprite-CXuYpkcw.svg#menu-close"></use>
