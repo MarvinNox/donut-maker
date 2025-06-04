@@ -1,9 +1,14 @@
+
 export const scrollBtn = document.querySelector('[data-scroll-btn]')
 
+
 export function scrollUpBtn() {
-    if (!scrollBtn) return;
-    scrollBtn.dataset.scrollBtn = window.pageYOffset > 300 ? 'true' : 'false';
-}
+    if (window.pageYOffset > 300) {
+        scrollBtn.classList.add("show-btn");
+    } else {
+        scrollBtn.classList.remove("show-btn");
+    };
+};
 
 function debounce(func, delay) {
     let timeout;

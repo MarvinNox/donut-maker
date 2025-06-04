@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 export function initCustomizSlider() {
-    new Swiper('[data-customiz-swiper]', {
+    new Swiper('.customiz--list.swiper', {
         speed: 1500,
         loop: true,
         slidesPerView: 1,
