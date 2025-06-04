@@ -2,19 +2,20 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 export function initDonutShowcase() {
-    new Swiper('[data-donut-swiper]', {
+    new Swiper('.donut-showcase', {
         speed: 1000,
         loop: true,
         autoplay: {
             delay: 1500,
             disableOnInteraction: false,
         },
+        slidesPerView: 'auto',
         centeredSlides: true,
         slidesPerView: 3,
         spaceBetween: 60,
         navigation: {
-            nextEl: '[data-swipe-prev]',
-            prevEl: '[data-swipe-next]',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
 }
