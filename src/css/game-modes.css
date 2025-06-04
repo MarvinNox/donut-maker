@@ -129,3 +129,8 @@
   @media screen and (width >= 1200px) {
   }
 }
+#game-modes .container {
+  @media screen and (width < 1200px) {
+    width: 320px;
+  }
+}
