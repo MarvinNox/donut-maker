@@ -19,10 +19,14 @@ detectCookiePop()
 import './css/donut-showcase.css';
 import { initDonutShowcase } from "./JS/donut-show";
 import { initCustomizSlider } from "./JS/slider-customiz";
-import { initHowToBakeSlider } from "./JS/hot-to-bake";
+import { handleResponsiveSwiper } from "./JS/hot-to-bake";
 
 window.addEventListener('DOMContentLoaded', () => {
     initDonutShowcase();
     initCustomizSlider()
-    initHowToBakeSlider()
+});
+
+
+window.addEventListener('resize', () => {
+    handleResponsiveSwiper();
 });

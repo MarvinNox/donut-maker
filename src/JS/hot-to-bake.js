@@ -1,8 +1,10 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 
-export function initHowToBakeSlider() {
-    new Swiper('[data-htb-swiper]', {
+let swiperInstance = null;
+
+function initSwiper() {
+    swiperInstance = new Swiper('[data-htb-swiper]', {
         speed: 1500,
         loop: true,
         slidesPerView: 1,
@@ -15,3 +17,22 @@ export function initHowToBakeSlider() {
         },
     });
 }
+
+function destroySwiper() {
+    if (swiperInstance) {
+        swiperInstance.destroy(true, true);
+        swiperInstance = null;
+    }
+}
+
+export function handleResponsiveSwiper() {
+    const breakpoint = 1200;
+    const width = window.innerWidth;
+
+    if (width < breakpoint && !swiperInstance) {
+        initSwiper();
+    } else if (width >= breakpoint && swiperInstance) {
+        destroySwiper();
+    }
+}
+handleResponsiveSwiper();
