@@ -9,7 +9,7 @@
   overflow-y: auto;
   transition: transform 0.3s ease;
   z-index: 1000;
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     display: none;
   }
 }
@@ -19,7 +19,7 @@
 }
 
 [data-menu='false'] {
-  transform: translate(calc(100% + 20px), -50%);
+  transform: translate(30em, -50%);
 }
 
 .mobile--menu__close {
