@@ -1,8 +1,3 @@
-ul,
-ol {
-    list-style-type: none;
-}
-
 .htw-container {
     width: 320px;
 
@@ -20,7 +15,6 @@ ol {
 }
 
 @media screen and (width >=1200px) {
-
     .swiper-wrapper {
         display: block !important;
     }
@@ -61,7 +55,6 @@ ol {
     @media screen and (width >=1200px) {
         font-size: 24px;
     }
-
 }
 
 .htw-txt {
@@ -163,27 +156,53 @@ ol {
     position: relative;
     padding-left: 6px;
     font-size: 14px;
-
-    @media screen and (width >=1200px) {
-        font-size: 20px;
-        line-height: 1.75;
-        padding-left: 10px;
-    }
+    max-width: 260px;
 
     &::before {
         content: '•';
         position: absolute;
         left: 0;
         font-size: 0.9em;
-        top: 0.1em;
+        top: 0.4em;
+    }
+
+    @media screen and (width >=1200px) {
+        font-size: 20px;
+        line-height: 1.75;
+        padding-left: 10px;
+        max-width: 575px;
+
+        &::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            font-size: 0.9em;
+            top: 0.1em;
+        }
     }
 }
 
 .htw-item.tabbed {
     text-indent: 1em;
 
+    &::before {
+        content: '-';
+        position: absolute;
+        left: 0;
+        font-size: 0.9em;
+        top: 0.2em;
+    }
+
     @media screen and (width >=1200px) {
         text-indent: 2em;
+
+        &::before {
+            content: '-';
+            position: absolute;
+            left: 0;
+            font-size: 0.9em;
+            top: 0.1em;
+        }
     }
 }
 
