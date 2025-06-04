@@ -1,6 +1,5 @@
 .cookie--pop {
   position: fixed;
-  /* top: 100%; */
   width: 100%;
   height: 300px;
   bottom: 0;
@@ -13,10 +12,13 @@
   display: flex;
   flex-direction: column;
   transition: transform 0.4s ease;
+}
+
+[data-cookie-open='false'] {
   transform: translateY(100%);
 }
 
-.cookie--pop.open {
+[data-cookie-open='true'] {
   transform: translateY(0);
 }
 
