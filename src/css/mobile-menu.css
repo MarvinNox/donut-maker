@@ -1,11 +1,15 @@
 .mobile--menu__container {
   position: fixed;
-  top: 52%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 128px;
   left: 50%;
-  width: 280px;
+  width: calc(100vw - 40px);
+  height: calc(100vh - 158px);
   border-radius: 16px;
+  padding-block: 12vh;
   background: linear-gradient(270deg, #fafeb8 0%, #fed7fe 100%);
-  padding: 20px 16px 48px 80px;
   overflow-y: auto;
   transition: transform 0.3s ease;
   z-index: 1000;
@@ -15,7 +19,7 @@
 }
 
 [data-menu='true'] {
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
 }
 
 [data-menu='false'] {
@@ -46,12 +50,6 @@
   color: var(--text);
 }
 
-.mobile--menu__toggle {
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
 .mobile--menu__close--icon {
   width: 14px;
   height: 14px;
