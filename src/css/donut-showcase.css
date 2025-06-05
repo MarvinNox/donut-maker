@@ -40,9 +40,8 @@
   width: 100%;
   padding: 0;
   height: 57vh;
-  overflow-y: visible;
   @media screen and (max-width: 1200px) {
-    height: 35vh;
+    height: 38vh;
   }
 }
 
