@@ -66,11 +66,32 @@ ul.customiz--list {
     display: none;
   }
 }
-
-li.customiz--item:nth-child(2),
-li.customiz--item:nth-child(3),
-li.customiz--item:nth-child(6) {
-  .customiz--image__box {
-    box-shadow: 0 4px 40px 0 rgba(247, 255, 0, 0.5);
+@media screen and (width >= 1200px) {
+  .one_box {
+    order: 1;
+  }
+  .two_box {
+    order: 2;
+    .customiz--image__box {
+      box-shadow: 0 4px 40px 0 rgba(247, 255, 0, 0.5);
+    }
+  }
+  .three_box {
+    order: 3;
+    .customiz--image__box {
+      box-shadow: 0 4px 40px 0 rgba(247, 255, 0, 0.5);
+    }
+  }
+  .four_box {
+    order: 4;
+  }
+  .five_box {
+    order: 5;
+  }
+  .six_box {
+    order: 6;
+    .customiz--image__box {
+      box-shadow: 0 4px 40px 0 rgba(247, 255, 0, 0.5);
+    }
   }
 }
